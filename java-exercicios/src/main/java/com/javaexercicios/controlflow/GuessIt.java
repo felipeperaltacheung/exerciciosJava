@@ -10,16 +10,15 @@ public class GuessIt {
 
         System.out.printf("Generated number is: %d.%n", randomNum);
 
-        if(shouldIGo()){
-            System.out.println("You got it");;
-        }  else {
-            System.out.println("Sorry you didn't get it");
+        if(randomNum == 1){
+            System.out.println("RED");;
+        } else if (randomNum == 2) {
+            System.out.println("BLUE");
+        } else  {
+            System.out.println("BLACK");
         }
     }
 
-    private static boolean shouldIGo(){
-        return true;
-    }
 
 }
 
